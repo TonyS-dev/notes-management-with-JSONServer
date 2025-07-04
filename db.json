@@ -1,0 +1,47 @@
+{
+  "notes": [
+    {
+      "id": "1",
+      "title": "Plans for future and other directions",
+      "content": "A Design Direction unifies everyone and adds meaning to web design. It's a combination of art and science that guides creative decisions.a",
+      "categories": [
+        "Work",
+        "Planning"
+      ],
+      "date": "2025-07-04",
+      "isActive": false
+    },
+    {
+      "id": "2",
+      "title": "A really long note to test the system's ability to handle large content",
+      "content": "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt..., lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt..., lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt..., lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt..., lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt..., lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt..., lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt..., lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt..., lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.",
+      "categories": [
+        "Meetings",
+        "Review"
+      ],
+      "date": "2025-06-25",
+      "isActive": true
+    },
+    {
+      "id": "3",
+      "title": "Design exploration techniques",
+      "content": "Exploring different design methodologies and user experience principles for better product development.",
+      "categories": [
+        "Design",
+        "UX"
+      ],
+      "date": "2025-04-26",
+      "isActive": true
+    },
+    {
+      "id": "5",
+      "title": "Prueba Macondo",
+      "content": "Esto es una prueba",
+      "categories": [
+        "General"
+      ],
+      "date": "2025-07-04",
+      "isActive": true
+    }
+  ]
+}

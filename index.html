@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Note taking app</title>
+        <link rel="stylesheet" href="./assets/styles/styles.css" />
+    </head>
+    <body>
+        <aside class="sidebar">
+            <div class="user-profile">
+                <img
+                    src="./assets/images/profile.jpg"
+                    alt="user-image"
+                    class="profile-img"
+                />
+                <div class="user-info">
+                    <h3>Your name</h3>
+                    <p>your.email@example.com</p>
+                </div>
+                <button class="collapse-btn">‹‹</button>
+            </div>
+
+            <button class="new-note">+ New note</button>
+
+            <nav class="sidebar-nav">
+                <div class="nav-item">
+                    <button class="nav-btn">📝 Notes</button>
+                </div>
+                <div class="nav-item">
+                    <button class="nav-btn">🔍 Search</button>
+                </div>
+                <div class="nav-item">
+                    <button class="nav-btn">📂 Archived</button>
+                </nav>
+            <div class="sidebar-footer">
+                <button class="about-btn">✨ About</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Welcome back, user!</h1>
+            </header>
+
+            <section class="dashboard">
+                <div class="notes-section">
+                    <h2>📝 My notes</h2>
+                    <div class="notes-list" id="notes-container">
+                        <!-- Notes will be dynamically generated here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal for creating/editing notes -->
+        <div class="modal-overlay" id="noteModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 id="modalTitle">Create New Note</h3>
+                    <button class="modal-close" id="closeModal">&times;</button>
+                </div>
+                
+                <form class="note-form" id="noteForm">
+                    <div class="form-group">
+                        <label for="noteTitle">Title *</label>
+                        <input type="text" id="noteTitle" required placeholder="Enter note title...">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="noteContent">Content *</label>
+                        <textarea id="noteContent" required placeholder="Write your note content here..." rows="3"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="noteCategory">Categories</label>
+                        <div class="category-input-group">
+                            <input type="text" id="noteCategory" placeholder="Add a category...">
+                            <button type="button" id="addCategoryBtn" class="add-category-btn">Add</button>
+                        </div>
+                        
+                        <!-- Selected Categories -->
+                        <div class="selected-categories" id="selectedCategories"></div>
+                        
+                        <!-- Available Categories -->
+                        <div class="available-categories-section">
+                            <h4>Available Categories:</h4>
+                            <div class="available-categories" id="availableCategories"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <button type="button" class="btn-secondary" id="cancelBtn">Cancel</button>
+                        <button type="submit" class="btn-primary" id="saveBtn">Save Note</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Confirmation Modal for Delete -->
+        <div class="modal-overlay" id="confirmModal">
+            <div class="modal-content confirm-modal">
+                <div class="modal-header">
+                    <h3 id="confirmTitle">⚠️ Confirm Delete</h3>
+                    <button class="modal-close" id="closeConfirmModal">&times;</button>
+                </div>
+                
+                <div class="confirm-body">
+                    <p id="confirmMessage">Are you sure you want to permanently delete this note?</p>
+                    <div class="note-preview" id="notePreview">
+                        <h4 id="previewTitle"></h4>
+                        <p id="previewContent"></p>
+                        <div class="preview-categories" id="previewCategories"></div>
+                    </div>
+                    <p class="warning-text">⚠️ This action cannot be undone.</p>
+                </div>
+                
+                <div class="modal-actions">
+                    <button type="button" class="btn-secondary" id="cancelDeleteBtn">
+                        Cancel
+                    </button>
+                    <button type="button" class="btn-danger" id="confirmDeleteBtn">
+                        🗑️ Delete Forever
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./src/gestion_datos.js"></script>
+    </body>
+</html>
